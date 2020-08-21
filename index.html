@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <style>
+	#canvasParent {width: 100%; height: 100%;}
+	#gameContainer { position:fixed;    top:0; left:0; width:100%; height:100%; }
+	body{   padding: 0;margin: 0;}
+	html {  touch-action: manipulation;}
+	#body   { position:absolute; top:0; left:0; margin: auto;}    
+	</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>test</title>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/out.json");
+    </script>
+	<meta name="viewport" content="width=600px" >
+  </head>
+  <body>
+	<div id="canvasParent">
+	    <div id="gameContainer"></div>
+	</div>
+	<section id="body">
+	</section>
+  </body>
+</html>
